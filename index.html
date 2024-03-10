@@ -1,0 +1,213 @@
+*Write A C program to Display your Name*
+
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+	char name[25];
+	printf("Enter Your Name:");
+	scanf("%s",&name);
+	printf("\nYour Name Is %s",name);
+	getch();
+	
+}
+
+
+*Write A C Program To Display the Integer*
+
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+	int number=42;
+	printf("%d",number);
+	getch();
+	
+}
+
+*Write A C Program to swap 2 values*
+
+#include<stdio.h>
+main()
+{
+	int a,b,temp;
+	printf("Enter the Number:");
+	scanf("%d%d"&a,&b);
+	temp=a;
+	a=b;
+	b=temp;
+	printf("Swapped Values Are:");
+	printf("a=%d,b=%d",a,b);
+}
+
+
+*Write A c program to check if a personis eligible to obtain a driving lisence*
+
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+	int age;
+	printf("Enter Your Age:");
+	scanf("%d",&age);
+	if(age>=18)
+	{
+		printf("\n\n You Are Eligible to Obtain a Driving Liscence! You Liscence Number is 452-7AHJ");
+    }
+	else
+    {
+	printf("\n\n You Are Not Eligible To Obtain A Driving Liscence");
+    }
+getch();
+}
+
+
+*Write a C program to check the given number is even or odd*
+
+#include<stdio.h>
+int main()
+{
+	int number=0;
+	printf("Enter The Number:");
+	scanf("%d",&number);
+	if(number% 2==0)
+	{
+		printf("%d is an Even Number", number);
+	}
+	else
+	{
+		printf("%d is a odd Number", number);
+	}
+	return 0;
+}
+
+*Write a C program to print the alphabet A to Z*
+
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+	int i;
+	for(i=65;i<=90;i++)
+	{
+		printf("%C\n",i);
+		
+	}
+	getch();
+}
+
+
+*Write A C Program To add 2 integers*
+
+#include<stdio.h>
+#include<conio.h>
+int main()
+{
+	int number1,number2,sum;
+	printf("Enter 2 Integers:");
+	scanf("%d%d",&number1,&number2);
+	sum=number1+number2;
+	printF("%d+%d=%d",number1,number2,sum);
+	return 0;
+}
+
+*Write a C program to Combine 2 Strings(Concatenation)*
+
+#include<stdio.h>
+#include<conio.h>
+#include<string.h>
+void main() 
+{
+char arr1[20], arr2[20];
+printf("Enter the first string:");
+scanf("%s", arr1);
+printf("Enter the second string:");
+scanf("%s", arr2);
+strcat(arr1,arr2);
+printf("The concatenated string is %s",arr1);
+getch();
+}
+
+*Write a C program to count the length of a String*
+
+#include<stdio.h>
+#include<conio.h>
+#include<string.h>
+void main() 
+{
+int len;
+char str1[30]="Immunoelectrophoretically";
+len = strlen(str1);
+printf("The length of the string is %d",len);
+getch();
+
+*Write A C Program to find the area and circumference of a circle*
+
+#include<stdio.h>
+main()
+{
+	float radius,area,perimeter;
+	printf("Enter the Radius of Circle:");
+	scanf("%f",&radius);
+	area=3.14*radius*radius
+	printf("\n\nThe Area Of The Circle with the radius %f",radius,area);
+	printf("\n\nThe Circumference of the same circle is %f",perimeter);
+	getch();
+	
+}
+
+
+*Write a C program to find the greatest of 3 numbers*
+
+#include<stdio.h>
+#include<conio.h>
+int main()
+{
+    int a,b,c;
+    printf("Enter Three Numbers:");
+    scanf("%d%d%d",&a,&b,&c);
+    if(a>b&&a>c)
+    {
+	printf("%d is Largest",a);
+    }
+    if(b>a&&b>c)
+    {
+	printf("%d is Largest",b);
+    }
+    if(c>a&&c>b)
+    {
+	printf("%d is largest",c);
+    }
+    if(a==b&&a==c)
+    {
+    printf("All Are Equal");
+    }
+}  
+
+*Write A C program to display the string in upper case and lower case*
+
+#include<stdio.h> 
+#include<conio.h> 
+main()
+{
+char string1 [100] = "anyone who has never made a Mistake has never tried anything New.";
+strupr(string1);
+printf("Upper case: %s", string1); 
+strlwr(string1);
+printf("\nLower case: %s", string1); 
+getch();
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
